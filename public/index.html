@@ -18,25 +18,25 @@
                     <button class="btn btn-default btn-lg" ng-click="addDigit(7)" value="7">7</button>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(8)" value="8">8</button>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(9)" value="9">9</button>
-                    <button class="btn btn-default btn-lg">/</button>
+                    <button class="btn btn-default btn-lg" ng-click="action('split')">/</button>
                 </div>
                 <div>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(4)" value="4">4</button>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(5)" value="5">5</button>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(6)" value="6">6</button>
-                    <button class="btn btn-default btn-lg">*</button>
+                    <button class="btn btn-default btn-lg" ng-click="action('multiply')">*</button>
                 </div>
                 <div>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(1)" value="1">1</button>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(2)" value="2">2</button>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(3)" value="3">3</button>
-                    <button class="btn btn-default btn-lg" ng-click="addDigit('-')">-</button>
+                    <button class="btn btn-default btn-lg" ng-click="action('subtract')">-</button>
                 </div>
                 <div>
                     <button class="btn btn-default btn-lg" ng-click="addDigit(0)">0</button>
-                    <button class="btn btn-default btn-lg" ng-click="addDigit('C')">C</button>
-                    <button class="btn btn-default btn-lg">=</button>
-                    <button class="btn btn-default btn-lg">+</button>
+                    <button class="btn btn-default btn-lg" ng-click="clear()">C</button>
+                    <button class="btn btn-default btn-lg" ng-click="calculate()">=</button>
+                    <button class="btn btn-default btn-lg" ng-click="action('add')">+</button>
                 </div>
                 
             </div>
